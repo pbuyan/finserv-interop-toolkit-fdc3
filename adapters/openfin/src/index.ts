@@ -8,7 +8,8 @@ export interface Adapter {
 }
 
 export class OpenfinAdapter implements Adapter {
-  readonly name = 'openfin';
+  // eslint-disable-next-line @typescript-eslint/prefer-as-const
+  readonly name: 'openfin' = 'openfin';
   async start() {
     /* TODO */
   }

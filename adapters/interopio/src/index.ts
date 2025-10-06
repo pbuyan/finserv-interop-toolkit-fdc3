@@ -8,7 +8,8 @@ export interface Adapter {
 }
 
 export class InteropioAdapter implements Adapter {
-  readonly name = 'interopio';
+  // eslint-disable-next-line @typescript-eslint/prefer-as-const
+  readonly name: 'interopio' = 'interopio';
   async start() {
     /* TODO */
   }
