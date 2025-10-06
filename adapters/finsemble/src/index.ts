@@ -1,4 +1,3 @@
-
 export interface Adapter {
   name: 'finsemble';
   start(): Promise<void>;
@@ -9,10 +8,20 @@ export interface Adapter {
 }
 
 export class FinsembleAdapter implements Adapter {
-  name = 'finsemble';
-  async start() { /* TODO */ }
-  async stop() { /* TODO */ }
-  async broadcast(_context: any, _channelId?: string) { /* TODO */ }
-  async raiseIntent(_intent: string, _context?: any) { return { handledBy: 'placeholder' }; }
-  async joinUserChannel(_channelId: string) { /* TODO */ }
+  readonly name = 'finsemble';
+  async start() {
+    /* TODO */
+  }
+  async stop() {
+    /* TODO */
+  }
+  async broadcast(_context: any, _channelId?: string) {
+    /* TODO */
+  }
+  async raiseIntent(_intent: string, _context?: any) {
+    return { handledBy: 'placeholder' };
+  }
+  async joinUserChannel(_channelId: string) {
+    /* TODO */
+  }
 }
