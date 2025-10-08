@@ -8,7 +8,10 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "test": "turbo test",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "lint:fix": "turbo lint -- --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css,scss,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md,css,scss,yml,yaml}\""
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
